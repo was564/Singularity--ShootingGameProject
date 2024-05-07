@@ -111,7 +111,9 @@ public class PlayerControl : MonoBehaviour
             foreach(GameObject go in enemySpawn.enemies)
             {
                 if (go == null) continue;
-                go.GetComponent<EnemyControl>().getBallManager().allStopBall();
+                BallManager ballManager = go.GetComponent<EnemyControl>().getBallManager();
+                if(ballManager == null) continue;
+                ballManager.allStopBall();
             }
             
             foreach(Renderer renderer in playerRender)

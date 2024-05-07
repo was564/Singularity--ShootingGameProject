@@ -140,9 +140,11 @@ public class EnemySpawn : MonoBehaviour
 
     public void removeEnemy(GameObject enemy)
     {
-        if (enemy.GetComponent<EnemyControl>().bulletType != EnemyType.TYPE.LASER)
+        EnemyControl enemyScript = enemy.GetComponent<EnemyControl>();
+        if (enemyScript.bulletType != EnemyType.TYPE.LASER)
         {
             enemies.Remove(enemy);
+            enemyScript.getBallManager().allStopBall();
             Destroy(enemy);
         }
         this.effectSoundSource.Play();
