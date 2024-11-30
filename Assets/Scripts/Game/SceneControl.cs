@@ -26,7 +26,7 @@ public class SceneControl : MonoBehaviour
 
     public GUIStyle guistyle; // 폰트 스타일.
     public GUIStyle boxGuiStyle;
-
+    
     private float clearScore = 0.0f;
 
     public float soundSize;

@@ -1512,7 +1512,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: 88d202d23bfb0124fa5cff28a168f13f, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
